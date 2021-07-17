@@ -1,0 +1,24 @@
+{
+  "name": "sre",
+  "version": "1.0.0",
+  "description": "Deployment of a functioning VPC with a public subnet and a EC2 instance. Nginx gets installed through user data, and the `index.html` file located on `src/modules/ec2` gets uploaded and used as the Nginx default landing page. A workflow should the manually be created on Github to automatically replace the `index.html` file everytime code gets commited to the main branch.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "command-exists": "1.2.9",
+    "node-cmd": "4.0.0",
+    "rsyncwrapper": "3.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luigi0229/SRE-Exercise.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luigi0229/SRE-Exercise/issues"
+  },
+  "homepage": "https://github.com/luigi0229/SRE-Exercise#readme"
+}
